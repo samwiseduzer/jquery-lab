@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Utah Programmers</title>
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	 crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.min.js"></script>
+</head>
+
+<body>
+	<header id="header">
+		<h3>Utah Programmers</h3>
+		<span id="displayCity" data-izimodal-open="#modal" data-izimodal-transitionin="fadeInDown">Click here to select a
+			city</span>
+	</header>
+	<div id="weather-info">
+		<div id="weather">No weather</div>
+	</div>
+
+	<div id="stack-overflow">
+		<!-- <h2>Stack Overflow</h2> -->
+		<input type="text" id="stack-overflow-topic"><button id="stack-overflow-query">Search</button>
+		<div id="stack-overflow-results"></div>
+	</div>
+
+	<div id="modal">
+		<form autocomplete="off">
+			Enter A Utah City: <input type="text" id="cityField" value=""><br>
+			Suggestion: <span id="txtHint">Empty</span>
+			<button id="weatherButton">Submit</button>
+		</form>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
